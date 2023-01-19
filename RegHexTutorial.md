@@ -11,6 +11,8 @@ A tutorial on how the regex works with descriptions of ALL components, each one 
 - [Grouping Constructs](#grouping-constructs)
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
+- [Bracket Expressions](#bracket-expressions)
+- [Greedy and Lazy Match](greedy-and-lazy-match)
 - [Conclusion](#conclusion)
 
 ## Regex Components
