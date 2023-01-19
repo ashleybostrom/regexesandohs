@@ -11,10 +11,9 @@ Before we get started, what is a hexidecimal? It is an alphanumeric code used to
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
-- [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
 - [Bracket Expressions](#bracket-expressions)
+- [Grouping Constructs](#grouping-constructs)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Conclusion](#conclusion)
 
@@ -35,11 +34,13 @@ The quantifier `?` means the character is optional, meaning it is to match 0 or 
 The quantifier `{}` means we need to match the number of characters inside the curly brackets exactly. In this case, `{6}` means we need to match the 6 characters that came before, whereas it is the same with `{3}` only with the 3 preceding characters.
 
 ### The OR Operator
+Self-explanatory by name, the "OR" operator is symbolized by `|` and tells the regex to match the pattern before OR after it. After just reviewing quantifiers, we know that this means in our expression `[a-f0-9]{6}|[a-f0-9]{3}` we need to match the value with either 6 characters OR 3 characters. For example, `#123456` OR `#123` will be a match.
+
+### Bracket Expressions
+Bracket expressions `[]` defines the allowable character set. In this case, `[a-f0-9]` with the `{6}` quantifier means that we can have any value that is 6 characters long containing the letters 'a-f' and the numbers '0-9' in it. On the other side of our OR `|` operator with the `{3}` quantifier means that we can have any value that is 3 characters long containing the letters 'a-f' and the numbers '0-9'.
 
 ### Grouping Constructs
-
-
-### Character Classes
+We have parentheses `()` to enclose our group, or a unit, for the regex. When characters are enclosed by `()` it then converts the parts (letters and numbers) into a whole value-- we now have our single hexidecimal value made out of many parts. 
 
 
 ## Conclusion 
