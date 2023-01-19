@@ -1,3 +1,0 @@
-# Regexes && Ohs
-
-A tutorial on how the regex works with descriptions of ALL components, each one in their respective section. This will be done in a GitHub gist rather than our traditional repository. A gist functions as a repository would and is created with Markdown similar to a README. This gist includes code examples, links, images, and everything else you would find in a README for a thorough and informative tutorial.
